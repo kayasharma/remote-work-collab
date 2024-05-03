@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IMPULSE</title>
+<script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+
+<style type="text/css">
+
+	*{
+		margin:0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+.hero{
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	background: linear-gradient(#f27bbd,#c65bcf);
+	
+	color: black;
+	background: url(pixy.jpg)no-repeat;
+	background-image: linear;
+
+}
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	color: black;
+	padding: 5px;
+
+	overflow: hidden;
+	background-color:white;
+	border-radius: 30px;
+	
+	background: transparent;
+	backdrop-filter: blur(20px);
+	border: 2px solid rgba(225, 225, 225,.5);
+	box-shadow: 0 0 30px rgba(0, 0, 0,.5);
+}
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+
+
+
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right,#00215e,#2c4e80);
+	border-radius: 30px;
+	transition: .5s;
+	text-transform: uppercase;
+}
+.input-group{
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+	color:black;
+
+
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0 ;
+	border: 1px solid white;
+	outline: none;
+	background: transparent;
+	text-transform: uppercase;
+	border-radius: 20px;
+
+
+
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background:linear-gradient(to right,#00215e,#2c4e80);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+.checkbox{
+
+	margin: 30px 10px 30px 0;
+
+
+
+}
+.span{
+	color:black;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+
+
+}
+#login{
+	left:50px;
+
+
+}
+#register{
+	left: 450px;
+}
+::placeholder{
+	color: black;
+	text-align: center;
+	
+
+}
+
+
+</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button"class="toggle-btn" onclick="login()">login</button>
+				<button type="button"class="toggle-btn"onclick="register()">register</button>
+
+				
+			</div>
+
+           <form id="login" class="input-group">
+           	<input type="text" class="input-field" placeholder="user id" required>
+           	
+           	<input type="text" class="input-field" placeholder="enter password" required>
+           	
+           	<input type="checkbox" class="checkbox"><span>remember password</span>
+           	<button type="submit" class="submit-btn">log in</button>
+
+           </form>
+            <form id="register"class="input-group">
+           	<input type="text" class="input-field" placeholder="user id" required>
+           		<input type="email" class="input-field" placeholder="email id" required>
+           	<input type="text" class="input-field" placeholder="enter password" required>
+           	<input type="checkbox" class="checkbox"><span>i agree to the terms and conditions</span>
+           	<button type="submit" class="submit-btn">register</button>
+
+           </form>
+
+
+		</div>
+
+
+
+	</div>
+
+	<script>
+		var x=document.getElementById("login");
+		var y=document.getElementById("register");
+		var z=document.getElementById("btn");
+		function register(){
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+
+		}
+		function login(){
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0";
+
+		}
+	</script>
+ </body>
+</html>
