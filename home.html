@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home page</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		body{
+
+			background: url(pixy.jpg);
+		}
+		.navbar{
+			background:linear-gradient(#874ccc,#f27bbd);
+			font-family: sans-serif;
+			padding-right: 15px;
+			padding-left: 15px;
+			border-radius: 20px;
+			
+		}
+		.navdiv{
+			display: flex; 
+			align-items: center;
+			justify-content: space-between;
+		}
+       .logo a{font-size: 35px;
+       	font-weight: 600;
+       	color: white;
+
+
+       }
+       li{
+       	list-style: none;
+       	display: inline-block;
+       }
+li a{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 25px;
+	position: relative;
+
+}
+
+li a::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width:0;
+	height: 1.5px;
+background: white;
+transition: .3s;
+
+}
+li a:hover::before{
+
+width: 100%;
+}
+
+.hp{
+	color: white;
+	width: 500px;
+	height: 350px;
+	background-color:pink ;
+	text-align: center;
+	padding: 12px;
+	margin-left: 500px;
+	margin-top:100px;
+	background-color: transparent;
+
+box-shadow:0 0 30px rgba(0, 0, 0,.5);
+}
+h1{
+	font-size: 60px;
+}
+p{
+	font-size: 30px;
+}
+.btn{
+	width: 200px;
+	height: 40px;
+	padding: 15px 0px;
+	
+	margin: 20px 10px;
+	border-radius: 24px;
+	font-weight:bold;
+	border: 2px;
+	text-align: center;
+	color: white;
+	background:linear-gradient(#874ccc,#f27bbd);
+	font-size: medium;
+
+
+
+
+}
+.pixy{
+	display: flex;
+	margin-top: 50px;
+
+}
+
+.vc{
+
+	width: 450px;
+	height: 120px;
+	background:transparent;
+	font-size:medium;
+	padding-left: 10px;
+	padding-bottom: 3px;
+    text-align: center;
+	margin-left: 30px;
+	color: white;
+	font-family: sans-serif;
+	box-shadow:0 0 30px rgba(0, 0, 0,.5);
+
+
+}
+
+.wc{
+
+	width: 450px;
+	height: 120px;
+	background:transparent;
+	font-size:medium;
+	padding-left: 10px;
+	padding-bottom: 3px;
+    text-align: center;
+	margin-left:30px;
+	margin-top:0px;
+	color: white;
+	font-family: sans-serif;
+	box-shadow:0 0 30px rgba(0, 0, 0,.5);
+
+
+}
+.tm{
+
+	width: 450px;
+	height: 120px;
+	background:transparent;
+	font-size:medium;
+	padding-left: 10px;
+	padding-bottom: 3px;
+    text-align: center;
+	margin-left:30px;
+	color: white;
+	font-family: sans-serif;
+	box-shadow:0 0 30px rgba(0, 0, 0,.5);
+
+
+}
+p{
+	font-size:small;
+}
+#kanchan{
+	font-size:xx-large;
+}
+
+
+
+	</style>
+</head>
+<body>
+<nav class="navbar">
+	<div class="navdiv">
+		<div class="logo"><a href="#">CIPHER</div>
+			<ul>
+				<li><a href="#">Home</li>
+					<li><a href="#">About</li>
+						<li><a href="#">Features</li>
+							<li><a href="#">Login</li>
+								<li><a href="#">Contact </li>
+									<li><a href="#">Feedback</li>
+			</ul>
+
+
+
+
+
+
+
+
+	</div>
+</nav>
+<div class="pixy">
+<div class="vc">
+	<h2>VIDEO CALL</h2>
+	
+	<p>Connect face-to-face with friends, family, or colleagues from anywhere in the world.</p>
+</div>
+<div class="wc">
+	<h2>WORLD CLOCK</h2>
+	
+	<p>Keep track of time zone effortlessly with our synchronized world display</p>
+</div>
+<div class="tm">
+	<h2>TEXT MESSAGING</h2>
+	<p>Stay in touch through messaging, share updates, and collaborate seamlessly</p>
+</div>
+</div>
+
+
+
+
+
+<div class="hp">
+	<h1>CIPHER</h1>
+	<p id="kanchan">Meet, chat, call and collaborate<br> in just one place</p>
+	<button class="btn">Register</button>
+	
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
